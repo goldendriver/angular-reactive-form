@@ -1,7 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+import { FormBuildComponent } from './form-build/form-build.component';
+import { FormAnswerComponent } from './form-answer/form-answer.component';
+
+const routes: Routes = [
+  { path: 'form/build', component: FormBuildComponent },
+  { path: 'form/answers', component: FormAnswerComponent },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
